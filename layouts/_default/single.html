@@ -1,0 +1,11 @@
+{{define "title"}}
+{{.Title}}
+{{end}}
+
+{{define "main"}}
+{{partial "breadcrumbs.html" .}}
+{{partial "heading.html" .}}
+<div id="mainBlock">
+    {{.Content}}
+</div>
+{{end}}

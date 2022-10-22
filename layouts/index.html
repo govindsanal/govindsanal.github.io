@@ -1,0 +1,29 @@
+{{define "title"}}
+{{.Site.Title}}
+{{end}}
+
+{{define "main"}}
+<style>
+    @media screen and (min-width: 700px) {
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+        }
+
+        #homeRight {
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+    }
+</style>
+<div id="homeMain">
+    {{.Content}}
+</div>
+
+<div id="homeRight">
+    <p>
+        Currently leanring: <span style="color:red"> Javascript</span>
+    </p>
+    <p>Current project: <a href="/projects/this-site" style="color:red;">This site</a></p>
+</div>
+{{end}}

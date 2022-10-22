@@ -1,0 +1,12 @@
+baseURL = 'https://govindsanal-github-io.pages.dev/'
+languageCode = 'en-us'
+title = 'Govind Sanal'
+
+[params]
+css = ["css/styles.css"]
+icons = ["icons"]
+screenshots = ["screenshots"]
+siteDescripttion = "Govind Sanal, Computer science student. This is the personal website of Govind Sanal. Checkout my projects and blogs"
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files

@@ -1,0 +1,25 @@
+{{define "title"}}
+{{.Title}}
+{{end}}
+
+{{define "main"}}
+{{ partial "breadcrumbs.html" . }}
+{{.Content}}
+<ul>
+    {{range sort .Pages ".Title"}}
+    <li>
+        <a href="{{.RelPermalink}}" style="text-decoration: none;">
+            {{.Title}}
+        </a>
+        <div style="margin-right: 40%;">
+            <p>
+                <a href="{{.RelPermalink}}"
+                    style="text-decoration: none; color: inherit; overflow-wrap: break-word;">{{if .Params.summary}}
+                    {{.Params.summary}}
+                    {{end}}</a>
+            </p>
+        </div>
+    </li>
+    {{end}}
+</ul>
+{{end}}

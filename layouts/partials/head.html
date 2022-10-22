@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="{{.Site.Params.siteDescripttion}}">
+<meta name="keywords" content="Govind Sanal, Computer Science, Projects">
+<meta name="author" content="Govind Sanal">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta property="og:url" content="https://govindsanal.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Govind Sanal">
+<meta property="og:description" content="{{.Site.Params.siteDescripttion}}">
+{{ range .Site.Params.screenshots }}
+<meta property="og:image" content="{{ . | absURL }}/screenshot.png">
+{{ end }}
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="govindsanal.github.io">
+<meta property="twitter:url" content="https://govindsanal.github.io/">
+<meta name="twitter:title" content="{{.Site.Title}}">
+<meta name="twitter:description" content="{{.Site.Params.siteDescripttion}}">
+{{ range .Site.Params.screenshots }}
+<meta name="twitter:image" content="{{ . | absURL }}/screenshot.png">
+{{ end }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+{{ range .Site.Params.icons }}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ . | absURL }}/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ . | absURL }}/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ . | absURL }}/favicon-16x16.png">
+{{ end }}
+
+{{ range .Site.Params.css }}
+<link rel="stylesheet" href="{{ . | absURL }}">
+{{ end }}

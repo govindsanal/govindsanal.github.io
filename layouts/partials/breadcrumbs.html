@@ -1,0 +1,24 @@
+<ul class="breadcrumbs">
+    <li><a title="{{.Site.Title}}" href="/">Home</a></li>
+    {{- $.Scratch.Set "url" "" -}}
+    {{- range (split .RelPermalink "/") -}}
+        {{- if (gt (len .) 0) -}}    
+            {{- $.Scratch.Set "isPage" "false" -}}
+            {{- $.Scratch.Add "url" (print "/" . ) -}}
+            {{- if $.Site.GetPage (print . ".md") -}}
+                {{- with $.Site.GetPage (print . ".md") -}}
+                    {{- if .IsPage -}}
+                        {{- $.Scratch.Set "isPage" "true" -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{- if eq ($.Scratch.Get "isPage") "true" -}}
+                {{- with $.Site.GetPage (print . ".md") -}}
+                    <li>&nbsp;&gt;&nbsp;<a title="{{.Title}}" href="{{ $.Scratch.Get `url` }}">{{ .Title }}</a></li>
+                {{- end -}}
+            {{- else -}}
+                <li>&nbsp;&gt;&nbsp;<a title="{{humanize .}}" href="{{ $.Scratch.Get `url` }}">{{ humanize . }}</a></li>
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+</ul>

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+a {
+    color: rgb(109, 0, 235);
+}
+
+.content {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#mainBlock {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+
+.breadcrumbs {
+    margin-left: -30px;
+}
+
+.breadcrumbs li {
+    display: inline;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+@media screen and (max-width: 700px) {
+    #homeMain {
+        float: none !important;
+        width: auto;
+    }
+
+    #header header {
+        margin-left: 25px !important;
+    }
+
+    #header header a {
+        font-size: 30px !important;
+    }
+
+    #header nav {
+        margin-right: 25px !important;
+    }
+
+    #header nav ul {
+        width: 275px !important;
+    }
+
+    #header nav a {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #header header {
+        margin-left: 25px !important;
+    }
+
+    #header header a {
+        font-size: 25px !important;
+    }
+
+    #header nav {
+        margin-right: 25px !important;
+    }
+
+    #header nav ul {
+        width: 155px !important;
+    }
+
+    #header nav a {
+        font-size: 20px !important;
+    }
+
+    .content {
+        margin: 10px;
+    }
+
+    #mainBlock {
+        margin-left: inherit !important;
+        margin-right: inherit !important;
+    }
+}
+
+#header {
+    width: 100%;
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header header {
+    margin-left: 50px;
+    font-size: 40px;
+
+}
+
+#header nav {
+    margin-right: 50px;
+}
+
+#header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#header nav a {
+    font-size: 30px;
+}
+
+#header a:hover {
+    color: #c9c9c9;
+}
+
+#header ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+}
+
+#header li {
+    list-style-type: none;
+}
