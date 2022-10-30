@@ -15,4 +15,6 @@ I am using a custom theme made in html with hugo templates. The content on the s
 
 ## Hosting
 
-It is, as of writing this, hosted on github pages. It is automatically built with github actions which was provided on the hugo [website](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
+It is hosted on cloudflare pages, which automatically builds the page when a commit is pushed to the github [repo](https://github.com/govindsanal/govind-sanal).
+
+
