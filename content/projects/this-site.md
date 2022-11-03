@@ -5,7 +5,7 @@ draft: false
 summary: "This site made with Hugo"
 ---
 
-The first project writeup on [this site](/projects/this-site) is about the site itself!
+The first project writeup on [this site]() is about the site itself!
 
 ## Making
 
