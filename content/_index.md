@@ -8,7 +8,7 @@ draft: false
 <hr width=75%>
 
 Hi, I am Govind, a computer science student from India.\
-I do backend programming with python and java.
+I do backend programming.
 
 I am happy to help with any projects, just [contact](/contact) me!
 
