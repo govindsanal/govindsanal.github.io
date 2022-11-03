@@ -1,7 +1,7 @@
 <h1 style="text-align: center;">{{.Title}}</h1>
-{{if .Date}}
+{{ if isset .Date }}
 <p>{{dateFormat "Monday, Jan 2, 2006" .Date}}</p>
-{{end}}
+{{ end }}
 
 <hr style="width: 75%;">
 <br>
