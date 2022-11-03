@@ -6,7 +6,7 @@
 {{ partial "breadcrumbs.html" . }}
 {{.Content}}
 <ul>
-    {{range sort .Pages ".Title"}}
+    {{range sort .Pages ".Date"}}
     <li>
         <a href="{{.RelPermalink}}" style="text-decoration: none;">
             {{.Title}} <span style="text-decoration: none; color: black;"> - {{dateFormat "2006-01-02" .Date}}</span>
