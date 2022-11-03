@@ -9,7 +9,7 @@
     {{range sort .Pages ".Title"}}
     <li>
         <a href="{{.RelPermalink}}" style="text-decoration: none;">
-            {{.Title}}
+            {{.Title}} <span style="text-decoration: none; color: black;"> - {{dateFormat "2006-01-02" .Date}}</span>
         </a>
         <div style="margin-right: 40%;">
             <p>
