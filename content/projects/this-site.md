@@ -15,6 +15,6 @@ I am using a custom theme made in html with hugo templates. The content on the s
 
 ## Hosting
 
-It is hosted on cloudflare pages, which automatically builds the page when a commit is pushed to the github [repo](https://github.com/govindsanal/govind-sanal).
+It is hosted on github pages, which automatically builds the page, through github actions when a commit is pushed to the github [repo](https://github.com/govindsanal/govind-sanal).
 
 
