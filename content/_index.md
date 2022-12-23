@@ -8,7 +8,6 @@ draft: false
 <hr width=75%>
 
 Hi, I am Govind, a computer science student from India.\
-I am a java developer.
 
 I am happy to help with any projects, just [contact](/contact) me!
 
