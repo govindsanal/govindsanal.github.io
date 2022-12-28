@@ -7,7 +7,7 @@ draft: false
 
 <hr width=75%>
 
-Hi, I am Govind, a computer science student from India.\
+Hi, I am Govind, a computer science student from India.
 
 I am happy to help with any projects, just [contact](/contact) me!
 
